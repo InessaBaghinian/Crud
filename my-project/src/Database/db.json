@@ -1,0 +1,32 @@
+{
+  "users": [
+    {
+      "name": "retertretrt",
+      "username": "rtetet",
+      "email": "etertere",
+      "phone": "etetet",
+      "id": 6
+    },
+    {
+      "name": "eyeyey",
+      "username": "yeyey",
+      "email": "eyeyey",
+      "phone": "eyeyey",
+      "id": 8
+    },
+    {
+      "name": "wtwtwtwt",
+      "username": "wtwtw",
+      "email": "twtwtw",
+      "phone": "wtwtwt",
+      "id": 9
+    },
+    {
+      "name": "gdhdgh",
+      "username": "dfdgd",
+      "email": "gdgdgd",
+      "phone": "dgdgdg",
+      "id": 10
+    }
+  ]
+}
