@@ -1,7 +1,15 @@
 import React, { useEffect, useState } from "react";
 import { getUsers, deleteUser } from "../Service/Api"
 import { Link } from "react-router-dom"
-
+import {
+  Table,
+  TableBody,
+  TableCaption,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from "@/components/ui/table"
 
 
 const AllUsers = () => {
@@ -21,38 +29,37 @@ const AllUsers = () => {
   };
 
   return (
-    <table >
-      <tr>
-        <td>
-          <th> ID </th>
-          <th> Name </th>
-          <th> UserName </th> 
-          <th> Email </th>
-          <th> Phone </th> 
-          <th> </th>
-        </td>
-      </tr>
-      <tr>
-        { addData.map((user) => (
-          <td>
-            <th> {user.id} </th>
-            <th> {user.name} </th>
-            <th> {user.username} </th>
-            <th> {user.email} </th>
-            <th> {user.phone} </th>
-            <tr>
-              <bottun  component={Link} style={{ marginRight: "15px" }} to={`/edit/${user.id}`} >
-                Edit
-              </bottun>
-              <bottun  onClick={() => deleteUserData(user.id)} >
-                Delete
-              </bottun>
-            </tr>
-          </td>
-        ))}
-      </tr>
-    </table>
+    <Table >
+<TableHeader >
+  <TableRow>
+    <TableHead > ID </TableHead>
+    <TableHead > Name </TableHead>
+    <TableHead > UserName </TableHead> 
+    <TableHead > Email </TableHead>
+    <TableHead > Phone </TableHead> 
+    <TableHead> </TableHead>
+  </TableRow>
+</TableHeader>
+<TableBody >
+  { addData.map((user) => (
+    <TableRow>
+      <TableCell > {user.id} </TableCell>
+      <TableCell > {user.name} </TableCell>
+      <TableCell > {user.username} </TableCell>
+      <TableCell > {user.email} </TableCell>
+      <TableCell > {user.phone} </TableCell>
+      <TableCell>
+        <bottun> Edit  </bottun>
+        <bottun  onClick={() => deleteUserData(user.id)}> Delete  </bottun>
+      </TableCell>
+      </TableRow>
+  ))}
+</TableBody>
+</Table> 
   );
 };
 
 export default AllUsers;
+
+
+

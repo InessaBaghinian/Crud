@@ -34,27 +34,45 @@ const EditUser = () => {
   };
 
   return (
-    <div>
-      <div>
-        <h1> Update User </h1>
+    <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
+      <div className="max-w-sm mx-auto">
+        <h1 className="text-green-600 font-bold text-3xl text-center"> Update User </h1>
         <div>
-            <label> Name </label>
-            <input onChange={(e) => valueChange(e)} name="name" value={name} />
+            <label className="block mb-2 text-sm font-medium text-green-700 dark:text-green-500"> Name </label>
+            <input 
+            className="bg-green-50 border border-green-500 text-green-900 dark:text-green-400 placeholder-green-700 dark:placeholder-green-500 text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block w-full p-2.5 dark:bg-gray-700 dark:border-green-500"
+            onChange={(e) => valueChange(e)} 
+            name="name" 
+            value={name} />
         </div>
         <div>
-            <label> User Name </label>
-            <input onChange={(e) => valueChange(e)} name="username" value={username} />
+            <label className="block mb-2 text-sm font-medium text-green-700 dark:text-green-500"> User Name </label>
+            <input 
+            className="bg-green-50 border border-green-500 text-green-900 dark:text-green-400 placeholder-green-700 dark:placeholder-green-500 text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block w-full p-2.5 dark:bg-gray-700 dark:border-green-500"
+            onChange={(e) => valueChange(e)} 
+            name="username" 
+            value={username} />
         </div>
         <div>
-            <label> Email </label>
-            <input onChange={(e) => valueChange(e)} name="email" value={email} />
+            <label className="block mb-2 text-sm font-medium text-green-700 dark:text-green-500"> Email </label>
+            <input 
+            className="bg-green-50 border border-green-500 text-green-900 dark:text-green-400 placeholder-green-700 dark:placeholder-green-500 text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block w-full p-2.5 dark:bg-gray-700 dark:border-green-500"
+            onChange={(e) => valueChange(e)} 
+            name="email" 
+            value={email} />
         </div>
         <div>
-            <label> Phone No. </label>
-            <input onChange={(e) => valueChange(e)} name="phone" value={phone} />
+            <label className="block mb-2 text-sm font-medium text-green-700 dark:text-green-500"> Phone No. </label>
+            <input 
+            className="bg-green-50 border border-green-500 text-green-900 dark:text-green-400 placeholder-green-700 dark:placeholder-green-500 text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block w-full p-2.5 dark:bg-gray-700 dark:border-green-500"
+            onChange={(e) => valueChange(e)} 
+            name="phone" 
+            value={phone} />
         </div>
-        <button onClick={() => editUserDetail()} >
-          Update User
+        <button 
+        className="w-full flex justify-center py-2 px-4 text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 shadow-lg shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 mt-5"
+        onClick={() => editUserDetail()}>
+          Update Student
         </button>
       </div>
     </div>
