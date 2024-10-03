@@ -1,11 +1,11 @@
-import Logout from "../Admin/Logout"
-import Login from "../Admin/Login"
+// import Logout from "../Admin/Logout"
+// import Login from "../Admin/Login"
 
 
 
 const Dashboard = ()=>{
     return <div>Dashboard
-        <Logout/>
+        {/* <Logout/> */}
         {/* <Login/> */}
     </div>
 }
